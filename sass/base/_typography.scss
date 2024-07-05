@@ -1,0 +1,170 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $colorBlack;
+  @include respond (maxWidth992){
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ExoBold;
+}
+
+.heading-hero-primary {
+  font-size: 85px;
+  color: $colorWhite;
+  line-height: 1.35;
+  @media screen and (min-width:1399.9px) {
+    font-size: 67px;
+  }
+
+  @media screen and (min-width:992.1px) and (max-width:1199.9px) {
+    font-size: 48px;
+  }
+
+  @include respond(maxWidth992) {
+    font-size: 36px;
+  }
+
+  @include respond(maxWidth768) {
+    font-size: 36px;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include respond(maxWidth575) {
+    font-size: 36px;
+  }
+  @media screen and (max-width:300px) {
+    font-size: 26px;
+  }
+}
+
+.heading-hero-secondary {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: $colorWhite;
+  small{
+    font-family: $ExoThin;
+    font-size: 55%;
+    letter-spacing: 1px;
+  }
+
+@include respond(maxWidth992) {
+  font-size: 36px;
+}
+
+@include respond(maxWidth768) {
+  font-size: 30px;
+}
+
+@include respond(maxWidth575) {
+  font-size: 24px;
+}
+}
+
+.heading-hero-tertiary {
+    font-size: 28px;
+    font-weight: 700;
+    stroke: #000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: $colorWhite;
+    display: inline-block;
+    line-height: 0.85;
+    small{
+      font-family: $ExoThin;
+      font-size: 55%;
+      letter-spacing: 1px;
+    }
+
+  @include respond(maxWidth992) {
+    font-size: 36px;
+  }
+
+  @include respond(maxWidth768) {
+    font-size: 30px;
+  }
+
+  @include respond(maxWidth575) {
+    font-size: 24px;
+  }
+}
+
+.heading-primary {
+  line-height: 1.25em;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 700;
+  color: $colorBlack;
+  @include respond(maxWidth992) {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  @include respond(maxWidth768) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  @include respond(maxWidth575) {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+.heading-secondary {
+  line-height: 1.25em;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba($colorBlack, 0.7);
+}
+
+.heading-tertiary{
+  line-height: 1.25em;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  color: $colorBgBlue;
+  @include respond(maxWidth992) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  @include respond(maxWidth768) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  @include respond(maxWidth575) {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+.content-para p,
+.content-para li {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include respond(maxWidth992) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
